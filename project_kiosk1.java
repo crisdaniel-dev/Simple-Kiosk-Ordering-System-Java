@@ -30,7 +30,14 @@ public class project_kiosk1 {
         System.out.println("     4 - Big size = 145 Pesos");
         System.out.println("=====================================");
         System.out.print("What Size Do You Want?: ");
-        int fries = sc.nextInt();
+        int fries = 0;
+        try {
+            fries = sc.nextInt();
+        } catch (Exception e) {
+            System.out.println("\nInvalid input! Please enter a number.");
+            return 0;
+        }
+
         if (fries == 1) {
             System.out.println("Fries: [Regular size]\n");
             System.out.println("====== Available Flavors ======");
@@ -39,15 +46,34 @@ public class project_kiosk1 {
             System.out.println("          3 - Sour Cream");
             System.out.println("===============================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor1 = sc.nextInt();
+            int flavor1 = 0;
+            try {
+                flavor1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
+
             System.out.print("How many?: ");
-            int Hm1 = sc.nextInt();
+            int Hm1 = 0;
+            try {
+                Hm1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment1;
             payment1 = Hm1 * 35;
             System.out.printf("        Total = [%d Pesos]", payment1);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount1 = sc.nextInt();
+            int amount1 = 0;
+            try {
+                amount1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change1 = amount1 - payment1;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -94,15 +120,33 @@ public class project_kiosk1 {
             System.out.println("          3 - Sour Cream");
             System.out.println("===============================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor2 = sc.nextInt();
+            int flavor2 = 0;
+            try {
+                flavor2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.print("How many?: ");
-            int Hm2 = sc.nextInt();
+            int Hm2 = 0;
+            try {
+                Hm2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment2;
             payment2 = Hm2 * 55;
             System.out.printf("        Total = [%d Pesos]", payment2);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount2 = sc.nextInt();
+            int amount2 = 0;
+            try {
+                amount2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change2 = amount2 - payment2;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -149,15 +193,33 @@ public class project_kiosk1 {
             System.out.println("          3 - Sour Cream");
             System.out.println("===============================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor3 = sc.nextInt();
+            int flavor3 = 0;
+            try {
+                flavor3 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.print("How many?: ");
-            int Hm3 = sc.nextInt();
+            int Hm3 = 0;
+            try {
+                Hm3 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment3;
             payment3 = Hm3 * 75;
             System.out.printf("        Total = [%d Pesos]", payment3);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount3 = sc.nextInt();
+            int amount3 = 0;
+            try {
+                amount3 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change3 = amount3 - payment3;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -204,15 +266,33 @@ public class project_kiosk1 {
             System.out.println("          S - Sour Cream");
             System.out.println("===============================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor4 = sc.nextInt();
+            int flavor4 = 0;
+            try {
+                flavor4 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.print("How many?: ");
-            int Hm4 = sc.nextInt();
+            int Hm4 = 0;
+            try {
+                Hm4 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment4;
             payment4 = Hm4 * 145;
             System.out.printf("        Total = [%d Pesos]", payment4);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount4 = sc.nextInt();
+            int amount4 = 0;
+            try {
+                amount4 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change4 = amount4 - payment4;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -264,7 +344,13 @@ public class project_kiosk1 {
         System.out.println("      2 = Pizza 11 Inches = 175 Pesos");
         System.out.println("==========================================");
         System.out.print("What Size Do You Want?: ");
-        int pizza = sc.nextInt();
+        int pizza = 0;
+        try {
+            pizza = sc.nextInt();
+        } catch (Exception e) {
+            System.out.println("\nInvalid input! Please enter a number.");
+            return 0;
+        }
         if (pizza == 1) {
             System.out.println("Pizza: [9 Inches Size]\n");
             System.out.println("=============== Pizza Flavor ===============");
@@ -274,15 +360,33 @@ public class project_kiosk1 {
             System.out.println("               4 - Ham & Cheese");
             System.out.println("============================================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor1 = sc.nextInt();
+            int flavor1 = 0;
+            try {
+                flavor1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.print("How many?: ");
-            int Hm1 = sc.nextInt();
+            int Hm1 = 0;
+            try {
+                Hm1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment1;
             payment1 = Hm1 * 95;
             System.out.printf("        Total = [%d Pesos]", payment1);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount1 = sc.nextInt();
+            int amount1 = 0;
+            try {
+                amount1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change1 = amount1 - payment1;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -333,15 +437,33 @@ public class project_kiosk1 {
             System.out.println("               4 - Ham & Cheese");
             System.out.println("============================================");
             System.out.print("What Flavor Do You Want?: ");
-            int flavor2 = sc.nextInt();
+            int flavor2 = 0;
+            try {
+                flavor2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.print("How many?: ");
-            int Hm2 = sc.nextInt();
+            int Hm2 = 0;
+            try {
+                Hm2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             System.out.println("-------------------------------");
             int payment2;
             payment2 = Hm2 * 175;
             System.out.printf("        Total = [%d Pesos]", payment2);
             System.out.print("\nEnter Amount To Pay: ");
-            int amount2 = sc.nextInt();
+            int amount2 = 0;
+            try {
+                amount2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
             int change2 = amount2 - payment2;
             System.out.println("-------------------------------");
             System.out.println("\n            MR CD                      ");
@@ -395,7 +517,13 @@ public class project_kiosk1 {
         System.out.println("             2 = Buy 2 Take 1");
         System.out.println("==========================================");
         System.out.print("Enter your desired option: ");
-        int option = sc.nextInt();
+        int option = 0;
+        try {
+            option = sc.nextInt();
+        } catch (Exception e) {
+            System.out.println("\nInvalid input! Please enter a number.");
+            return 0;
+        }
         if (option == 1) {
             System.out.println("Burger: [Solo]\n");
             System.out.println("================= Burger Menu =================");
@@ -405,7 +533,13 @@ public class project_kiosk1 {
             System.out.println("          4. Ham with Egg Burger = 40 Pesos");
             System.out.println("===============================================");
             System.out.print("Enter your desired burger: ");
-            int burger1 = sc.nextInt();
+            int burger1 = 0;
+            try {
+                burger1 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
 
             switch (burger1) {
                 case 1:
@@ -415,9 +549,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese1 = sc.nextInt();
+                    int cheese1 = 0;
+                    try {
+                        cheese1 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm1 = sc.nextInt();
+                    int Hm1 = 0;
+                    try {
+                        Hm1 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese1) {
                         case 1:
@@ -426,7 +572,13 @@ public class project_kiosk1 {
                             payment1 = Hm1 * 40;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -461,7 +613,13 @@ public class project_kiosk1 {
                             payment2 = Hm1 * 30;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -500,9 +658,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese2 = sc.nextInt();
+                    int cheese2 = 0;
+                    try {
+                        cheese2 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm2 = sc.nextInt();
+                    int Hm2 = 0;
+                    try {
+                        Hm2 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese2) {
                         case 1:
@@ -511,7 +681,13 @@ public class project_kiosk1 {
                             payment1 = Hm2 * 35;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -546,7 +722,13 @@ public class project_kiosk1 {
                             payment2 = Hm2 * 25;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -585,9 +767,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese3 = sc.nextInt();
+                    int cheese3 = 0;
+                    try {
+                        cheese3 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm3 = sc.nextInt();
+                    int Hm3 = 0;
+                    try {
+                        Hm3 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese3) {
                         case 1:
@@ -596,7 +790,13 @@ public class project_kiosk1 {
                             payment1 = Hm3 * 45;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -631,7 +831,13 @@ public class project_kiosk1 {
                             payment2 = Hm3 * 35;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -670,9 +876,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese4 = sc.nextInt();
+                    int cheese4 = 0;
+                    try {
+                        cheese4 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm4 = sc.nextInt();
+                    int Hm4 = 0;
+                    try {
+                        Hm4 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese4) {
                         case 1:
@@ -681,7 +899,13 @@ public class project_kiosk1 {
                             payment1 = Hm4 * 50;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -716,7 +940,13 @@ public class project_kiosk1 {
                             payment2 = Hm4 * 40;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            };
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -757,7 +987,13 @@ public class project_kiosk1 {
             System.out.println("          4. Ham with Egg Burger = 80 Pesos");
             System.out.println("===============================================");
             System.out.print("Enter your desired burger: ");
-            int burger2 = sc.nextInt();
+            int burger2 = 0;
+            try {
+                burger2 = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("\nInvalid input! Please enter a number.");
+                return 0;
+            }
 
             switch (burger2) {
                 case 1:
@@ -767,9 +1003,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese1 = sc.nextInt();
+                    int cheese1 = 0;
+                    try {
+                        cheese1 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm1 = sc.nextInt();
+                    int Hm1 = 0;
+                    try {
+                        Hm1 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese1) {
                         case 1:
@@ -778,7 +1026,13 @@ public class project_kiosk1 {
                             payment1 = Hm1 * 80;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -813,7 +1067,13 @@ public class project_kiosk1 {
                             payment2 = Hm1 * 60;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -852,9 +1112,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese2 = sc.nextInt();
+                    int cheese2 = 0;
+                    try {
+                        cheese2 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm2 = sc.nextInt();
+                    int Hm2 = 0;
+                    try {
+                        Hm2 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese2) {
                         case 1:
@@ -863,7 +1135,13 @@ public class project_kiosk1 {
                             payment1 = Hm2 * 70;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -898,7 +1176,13 @@ public class project_kiosk1 {
                             payment2 = Hm2 * 50;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -937,9 +1221,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese3 = sc.nextInt();
+                    int cheese3 = 0;
+                    try {
+                        cheese3 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm3 = sc.nextInt();
+                    int Hm3 = 0;
+                    try {
+                        Hm3 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese3) {
                         case 1:
@@ -948,7 +1244,13 @@ public class project_kiosk1 {
                             payment1 = Hm3 * 95;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -983,7 +1285,13 @@ public class project_kiosk1 {
                             payment2 = Hm3 * 75;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -1022,9 +1330,21 @@ public class project_kiosk1 {
                     System.out.println("     2. Without Cheese");
                     System.out.println("==============================");
                     System.out.print("Enter your desired option: ");
-                    int cheese4 = sc.nextInt();
+                    int cheese4 = 0;
+                    try {
+                        cheese4 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
                     System.out.print("How many: ");
-                    int Hm4 = sc.nextInt();
+                    int Hm4 = 0;
+                    try {
+                        Hm4 = sc.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("\nInvalid input! Please enter a number.");
+                        return 0;
+                    }
 
                     switch (cheese4) {
                         case 1:
@@ -1033,7 +1353,13 @@ public class project_kiosk1 {
                             payment1 = Hm4 * 100;
                             System.out.printf("        Total = [%d Pesos]", payment1);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount1 = sc.nextInt();
+                            int amount1 = 0;
+                            try {
+                                amount1 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change1 = amount1 - payment1;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
@@ -1068,7 +1394,13 @@ public class project_kiosk1 {
                             payment2 = Hm4 * 80;
                             System.out.printf("        Total = [%d Pesos]", payment2);
                             System.out.print("\nEnter Amount To Pay: ");
-                            int amount2 = sc.nextInt();
+                            int amount2 = 0;
+                            try {
+                                amount2 = sc.nextInt();
+                            } catch (Exception e) {
+                                System.out.println("\nInvalid input! Please enter a number.");
+                                return 0;
+                            }
                             int change2 = amount2 - payment2;
                             System.out.println("-------------------------------");
                             System.out.println("\n            MR CD                      ");
